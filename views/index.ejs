@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="public/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <fieldset>
+        <form action="/" method="post" id="city-form">
+          <input
+            type="text"
+            name="city"
+            placeholder="Enter a city"
+            class="city-input"
+            required
+          />
+          <button type="submit">Get weather</button>
+        </form>
+      </fieldset>
+      <fieldset>
+            <% if (weather !== null){ %>
+                  <p><%= weather %></p>
+            <% } %>
+            <% if (error !== null){ %>
+                  <p><%= error %></p>
+            <% } %>
+      </fieldset>
+    </div>
+  </body>
+</html>

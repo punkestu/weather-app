@@ -1,0 +1,12 @@
+*{
+      font-family: sans-serif;
+      text-align: center;
+}
+#city-form {
+      display: flex;
+      gap: 0.5rem;
+      width: 100%;
+}
+#city-form .city-input {
+      flex-grow: 2;
+}
